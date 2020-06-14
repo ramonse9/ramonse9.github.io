@@ -1,0 +1,80 @@
+
+/**** LIGHT ****/
+
+.section-about,
+.section-skills .professional-skills,
+.section-skills .additional-skills,
+.section-education .education-content,
+.section-experience .icon-experience,
+.section-experience .experience-content,
+.section-testimonials .swiper-slide,
+.section-contact-us .form-content,
+.section-contact-us .info-content {
+	background-color: #ffffff;
+}
+
+
+
+.section-about .download-resume,
+.section-about .text-available,
+.section-about h3,
+.section-about .title-info,
+.section-about .title-links,
+.section-about .li-social-links a,
+.section-skills,
+.section-skills .title-progress span,
+.section-education .ul-education,
+.section-experience .icon-experience,
+.section-experience .company-name,
+.section-portfolio .filter-portfolio li,
+.section-testimonials .personal-info span,
+.scroll-top,
+.more-blog .pagination-blog a {
+	color: #757575;
+}
+
+.section-about h2 span {
+	color: #000000;
+}
+
+.section-about .li-social-links a:hover,
+.section-skills h3,
+.section-education h3,
+.section-experience .period-experience,
+.section-portfolio .filter-portfolio li.active,
+.section-portfolio .item-overlay,
+.section-testimonials p,
+.section-interests h4,
+.section-contact-us .info-icon,
+.section-contact-us .info-text,
+.section-contact-us .social-links li,
+.section-contact-us input[type="submit"] ,
+.section-footer .info-icon,
+.section-footer .info-text,
+.section-footer .social-links li {
+	color: #ffffff;
+}
+
+.section-skills .progress,
+.section-contact-us input[type="submit"]:hover,
+.section-contact-us .info-text {
+	background-color: #757575;
+}
+
+.section-about .li-social-links a {
+	border: 1px solid #757575;
+}
+
+.section-experience .all-experience {
+	border-left: 5px solid #ffffff;
+}
+
+.section-contact-us input,
+.section-contact-us textarea {
+	border-bottom: 1px solid #cacaca;
+	color: #202020;
+}
+
+.section-contact-us .info-text::before {
+	border-right-color: #757575;
+}
