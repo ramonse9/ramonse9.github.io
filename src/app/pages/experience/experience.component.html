@@ -2,45 +2,33 @@
     <section id="experience" class="section section-experience wow fadeInUp" data-wow-offset="40" style="visibility: visible; animation-name: fadeInUp;">
         <div class="header-section">
             <h2 class="h2-section">EXPERIENCE</h2>
-        </div>
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <span class="icon-experience">
-                    <i class="fa fa-briefcase" aria-hidden="true"></i>
-                </span>
-                <div class="all-experience">
-                    <!-- single experience -->
-                    <div class="experience-content">
-                        <span class="period-experience">Nov 2018 - Jan 2020</span>
-                        <h3 class="specialty-name">Web Developer</h3>
-                        <h3 class="company-name">Primus Labs / Spyral Systems</h3>
-                        <p class="prg-experience">NAS (New Azzule System), ESB (Enterprise Service Bus).</p>
-                        <p>The company offers analysis services to preserve the food security of crop producers.</p>
-                        <p class="prg-experience">Visual Studio .Net 2017,  ASP .Net Core 2.1,  C#, MVC architecture, SCRUM, HTML5, CSS3, Element (ui), Javascript (ES6), VueJS, NodeJS, WebPack, Babel, JSON, REST API, Web Sockets, JWT,  SQL Server (Views, Functions, SP, Trigger),  VisualSStudio Code, Insomnia, PostMan, GIT, Tortoise.</p>
+        </div>       
+        <section *ngIf="!service.cargandoExperience">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <span class="icon-experience">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    </span>
+                    <div class="all-experience">
+                        <!-- single experience -->
+
+                        <section *ngFor="let exp of service.experienceJSON">
+                            <div class="experience-content">
+                                <span class="period-experience">{{exp.period}}</span>
+                                <h3 class="specialty-name">{{exp.position}}</h3>
+                                <h3 class="company-name">{{exp.company}}</h3>
+                                <p class="prg-experience">{{exp.projects}}</p>
+                                <p>{{exp.activities}}</p>
+                                <p class="prg-experience">{{exp.tools}}</p>
+                            </div>
+                        </section>
+                        <!-- / single experience -->
+                        <!-- single experience -->
+                       
+                        <!-- / single experience -->
                     </div>
-                    <!-- / single experience -->
-                    <!-- single experience -->
-                    <div class="experience-content">
-                        <span class="period-experience">Feb 2017 - Sep 2018</span>
-                        <h3 class="specialty-name">Web Developer</h3>
-                        <h3 class="company-name">Salud Digna</h3>
-                        <p class="prg-experience">HIS (Hospital Integral System).</p>
-                        <p class="prg-experience">The company offers preventive and diagnostic health services for the generalpublic.</p>
-                        <p class="prg-experience">Visual Studio .Net 2017,  ASP .Net Core 2.1,  C#, MVC architecture, SCRUM,Entity Framework, HTML, CSS3, Materialize, Javascript (ES6), TypeScript,  NodeJS, Express, JSON, REST API, Web Sockets, JWT,  SQL Server, MongoDB, Mongoose, Robo 3T (Robo Mongo), Visual Studio Code, Insomnia, PostMan, TFS.</p>
-                    </div>
-                    <!-- / single experience -->
-                    <!-- single experience -->
-                    <div class="experience-content">
-                        <span class="period-experience">Jan 2007 - Dec 2016</span>
-                        <h3 class="specialty-name">Web Developer</h3>
-                        <h3 class="company-name">Dafi S. C.</h3>                            
-                        <p class="prg-experience">Scf2 (Sistema de control de fideicomisos - "Trust Control System" ), Jubicom (Jubilación Complementaria - "Complementary Retirement"), PFN (Pago Fuera de Nómina - "Off-Payroll Payment"), UDEP (Unidades De Participación - "Participation Units", Préstamos Magisteriales ("Teacher Loans"),GFD (Gastos Funerarios de Dependientes - "Dependent Funeral Expenses")</p>
-                        <p class="prg-experience">The company offers financial services like investments, loans, life iinsurance, funeral expenses, savings banks, and anothers services, especially to some unionized people.</p>
-                        <p class="prg-experience">Visual Studio .Net 2003, 2008, 2012, 2015,  C#, Web Forms, Win Forms, 3-tier architecture, ADO .Net, HTML, CSS3, Active Reports, Javascript, XML, SQL Server(Views, Triggers, SP, Functions), TFS.</p>
-                    </div>
-                    <!-- / single experience -->
                 </div>
             </div>
-        </div>
+        </section>
     </section>
     </div>

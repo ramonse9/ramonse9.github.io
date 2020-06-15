@@ -18,11 +18,19 @@ export class InfoResumeService {
   educationJSON;
   cargandoEducation = true;
 
+  experienceJSON;
+  cargandoExperience = true;
+
+  interestsJSON;
+  cargandoInterests = true;
+
   constructor(private httpClient: HttpClient) {
     this.cargarPersonal();
     this.cargarSocialMedia();
     this.cargarSkills();
     this.cargarEducation();
+    this.cargarExperience();
+    this.cargarInterests();
   }
 
   private cargarPersonal(){
@@ -57,7 +65,27 @@ export class InfoResumeService {
         this.educationJSON = resp;
         this.cargandoEducation = false;
 
-        console.log(this.educationJSON );
+        console.log( "this.educationJSON" );
+        console.log( this.educationJSON );
+      });
+  }
+
+  private cargarExperience(){
+    this.httpClient.get('https://resumeangular-1a061.firebaseio.com/experience.json')
+      .subscribe( resp => {
+        this.experienceJSON = resp;
+        this.cargandoExperience = false;
+        console.log(this.experienceJSON);
+      });
+  }
+
+  private cargarInterests(){
+    this.httpClient.get('https://resumeangular-1a061.firebaseio.com/interests.json')
+      .subscribe( resp => {
+        this.interestsJSON = resp;
+        this.cargandoInterests = false;
+        console.log( this.interestsJSON );
+
       });
   }
 }

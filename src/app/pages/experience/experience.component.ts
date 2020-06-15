@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InfoResumeService } from 'src/app/services/info-resume.service';
 
 @Component({
   selector: 'app-experience',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienceComponent implements OnInit {
 
-  constructor() { }
+  constructor(public service: InfoResumeService) { }
 
   ngOnInit(): void {
   }

@@ -1,5 +1,5 @@
-<div class="animated fadeIn">
-    <section id="interests" class="section section-interests wow fadeInUp" data-wow-offset="40" style="visibility: visible; animation-name: fadeInUp;">
+<div class="animated fadeIn">        
+    <section id="interests" class="section section-interests"  >
         <div class="header-section">
             <h2 class="h2-section">INTERESTS</h2>
         </div>
@@ -8,55 +8,20 @@
                 I love my profession, and I also find a balance between professional and recreational, some of my hobbies are:</p>
         </div>            
         <!-- more icons for interests : https://www.iconfinder.com/ -->
-        <div class="row">                 
-            <div class="col-sm-2 p-2">
-                <div class=" swiper-slide">                                             
-                    <div>
-                        <img src="assets/img/icons/travel_icon.png" alt="Music">
+        
+        <div *ngIf="!service.cargandoInterests">
+            <div class="row">
+                <div class="col-sm-2 p-2" *ngFor="let interest of service.interestsJSON">
+                    <div class=" swiper-slide">                                             
+                        <div>
+                            <img [src]="interest.icon" alt="Travel">
+                        </div>
+                        <h4>{{interest.name}}</h4>                        
                     </div>
-                    <h4>Travel</h4>                        
                 </div>
-            </div>
-            <div class="col-sm-2 p-2">
-                <div class=" swiper-slide">                                             
-                    <div>
-                        <img src="assets/img/icons/music_icon.png" alt="Music">
-                    </div>
-                    <h4>Music</h4>                        
-                </div>
-            </div>
-            <div class="col-sm-2 p-2">
-                <div class=" swiper-slide">                                             
-                    <div>
-                        <img src="assets/img/icons/camera_icon.png" alt="Music">
-                    </div>
-                    <h4>Photography</h4>                        
-                </div>
-            </div>
-            <div class="col-sm-2 p-2">
-                <div class=" swiper-slide">                                             
-                    <div>
-                        <img src="assets/img/icons/motorcycle_icon.png" alt="Music">
-                    </div>
-                    <h4>Motorcycles</h4>                        
-                </div>
-            </div>
-            <div class="col-sm-2 p-2">
-                <div class=" swiper-slide">                                             
-                    <div>
-                        <img src="assets/img/icons/movies_icon.png" alt="Music">
-                    </div>
-                    <h4>Movies</h4>                        
-                </div>
-            </div>
-            <div class="col-sm-2 p-2">
-                <div class=" swiper-slide">                                             
-                    <div>
-                        <img src="assets/img/icons/weight_icon.png" alt="Music">
-                    </div>
-                    <h4>Weight</h4>                        
-                </div>
+               
             </div>
         </div>
+        
     </section>
     </div>
