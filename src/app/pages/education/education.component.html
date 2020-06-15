@@ -2,8 +2,40 @@
     <section id="education" class="section section-education">
         <div class="header-section">
             <h2 class="h2-section">EDUCATION &amp; CERTIFICATIONS</h2>
+        </div>        
+        <div class="row"> 
+            <section *ngIf="!service.cargandoEducation">
+                    
+                <div class="col-sm-4">
+                    <div class="education-content">
+                        <div class="period">
+                            <h3>2003 - 2008</h3>
+                        </div>
+                        <ul class="ul-education">
+                            <li class="li-specialty">
+                                <div class="specialty">
+                                    <span class="education-icon"><i class="fa fa-file-text" aria-hidden="true"></i></span>
+                                    <span class="specialty-name">Degree in Computer Science</span>
+                                </div>
+                            </li>
+                            <li class="li-university">
+                                <div class="university">
+                                    <span class="education-icon"><i class="fa fa-university" aria-hidden="true"></i></span>
+                                    <span class="university-name">Universidad Autónoma de Sinaloa</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="prg-education"></p>
+                        
+                    </div>
+                </div>  
+            </section>
+
         </div>
+       
+
         <div class="row">                
+            
             <div class="col-sm-4">
                 <div class="education-content">
                     <div class="period">
@@ -145,7 +177,8 @@
                 </div>
             </div>
             <!-- / single education -->
-            <div class="clearfix"></div>
+            
         </div>
+      
     </section>
-    </div>
+</div>

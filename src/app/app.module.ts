@@ -10,7 +10,10 @@ import { EducationComponent } from './pages/education/education.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
 import { InterestsComponent } from './pages/interests/interests.component';
 import { ContactComponent } from './pages/contact/contact.component';
+
 import { AppRoutingModule } from './app-routing.module';
+
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,8 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

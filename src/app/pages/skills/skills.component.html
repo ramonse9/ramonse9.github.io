@@ -8,59 +8,15 @@
                 <div class="professional-skills other-skills">
                     <div class="title-skills">
                         <h3>PROFESSIONAL SKILLS</h3>
-                    </div>                                           
-                    <section>
-                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                        Angular - Full Stack MEAN
-                    </section>
-                    <section>
-                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                        ReactJS - Full Stack MERN
-                    </section>
-                    <section>
-                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                        VueJS - Full Stack MEVN
-                    </section>
-                    <section>
-                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                        C#, VS .NET 2017, Entity Framework
-                    </section>
-                    <section>
-                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                        ASP .Net Core 2.1, Entity Framework Core
-                    </section>
-                    <section> 
-                        <i class="fa fa-check-square-o" aria-hidden="true"></i>                           
-                        HTML5, CSS3, Bootstap, Materialize, Vuetify
-                    </section>
-                    <section>
-                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                        JavaScript (ES6), Typescript, JSX
-                    </section>
-                    <section>
-                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                        REST API, JWT, Web Sockets
-                    </section>
-                    <section>
-                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                        SQL Server, MySQL, PostgreSQL
-                    </section>                        
-                    <section>
-                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                        Firebase, Mongo DB
-                    </section>
-                    <section>
-                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                        Git, TFS, Tortoise
-                    </section>
-                    <section>
-                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                    Visual Studio Code
-                    </section>
-                    <section>
-                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                        PostMan, Insomnia
-                    </section>
+                    </div>
+                    <section *ngIf="!service.cargandoSkills">
+                        <section *ngFor="let skill of service.skillsJSON">
+                            <section *ngIf="skill != null && skill.type == 'professional'">
+                                <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                {{skill.skill}}
+                            </section>
+                        </section>
+                    </section>                    
                 </div>
             </div>
             <div class="col-md-5">
@@ -70,16 +26,16 @@
                     </div>                       
                     <div class="other-skills">
                         <div class="row">
-                            <div class="col-sm-12">                                                                       
-                                <section>
-                                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                                    <span>Photography, Photoshop</span>
-                                </section>                                      
-                                <section>
-                                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                                    <span>Video Editing, Adobe Premiere</span>
-                                </section>
-                            </div>                                
+                            <div class="col-sm-12">
+                                <section *ngIf="!service.cargandoSkills">
+                                    <section *ngFor="let skill of service.skillsJSON">
+                                        <section *ngIf="skill != null && skill.type=='additional'">
+                                            <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                            {{skill.skill}}
+                                        </section>
+                                    </section>
+                                </section>                               
+                            </div>
                         </div>
                     </div>
                 </div>
