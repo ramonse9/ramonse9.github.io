@@ -44,7 +44,6 @@ export class InfoResumeService {
   private cargarSocialMedia(){
     this.httpClient.get('https://resumeangular-1a061.firebaseio.com/social_media.json')
       .subscribe( resp =>{
-        console.log( resp );
         this.socialMediaJSON = resp;
         this.cargandoSocialMedia = false;
       });
@@ -55,7 +54,6 @@ export class InfoResumeService {
       .subscribe( resp => {
         this.skillsJSON = resp;
         this.cargandoSkills = false;
-        console.log(this.skillsJSON);
       });
   }
 
@@ -64,9 +62,6 @@ export class InfoResumeService {
       .subscribe( resp => {
         this.educationJSON = resp;
         this.cargandoEducation = false;
-
-        console.log( "this.educationJSON" );
-        console.log( this.educationJSON );
       });
   }
 
@@ -75,7 +70,6 @@ export class InfoResumeService {
       .subscribe( resp => {
         this.experienceJSON = resp;
         this.cargandoExperience = false;
-        console.log(this.experienceJSON);
       });
   }
 
@@ -84,8 +78,6 @@ export class InfoResumeService {
       .subscribe( resp => {
         this.interestsJSON = resp;
         this.cargandoInterests = false;
-        console.log( this.interestsJSON );
-
       });
   }
 }
