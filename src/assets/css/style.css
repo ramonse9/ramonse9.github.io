@@ -28,6 +28,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	margin: 0;
 }
 
+
 a, a:hover, a:focus {
 	text-decoration: none;
 	color: inherit;
@@ -35,6 +36,13 @@ a, a:hover, a:focus {
 
 ul {
 	list-style: none;
+}
+
+.loading {
+	display: flex; 
+	align-items: center; 
+	justify-content:center; 
+	min-height: 100vh; 
 }
 
 .section {
@@ -49,7 +57,8 @@ ul {
 .section-experience .experience-content,
 .section-testimonials .swiper-slide,
 .section-contact-us .form-content,
-.section-contact-us .info-content {
+.section-contact-us .info-content,
+.navbar {
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15),0 2px 10px 0 rgba(0,0,0,0.11);
 }
 
@@ -67,8 +76,7 @@ ul {
 	margin-bottom: 56px;
 }
 
-.section h2,
-.section-pricing .pricing-price .number {
+.section h2 {
 	font-size: 40px;
 }
 
@@ -117,8 +125,6 @@ ul {
 	padding-left: 15px;
 	margin: 0 auto;
 }
-
-
 
 /****  5 - CONTAINER ****/
 
@@ -208,6 +214,8 @@ ul {
 
 /****  5-2 - SKILLS ****/
 
+
+
 .section-skills .h2-section {
 	margin-top: 20px;
 	margin-bottom: 50px;
@@ -215,7 +223,11 @@ ul {
 
 .section-skills .professional-skills,
 .section-skills .additional-skills {
+	
 	padding: 0 30px 30px;
+	margin-bottom: 50px;
+
+		
 }
 
 	.section-skills .title-skills {
@@ -228,41 +240,6 @@ ul {
 			top: -32px;
 			padding: 18px 28px;
 			box-shadow: 0 0 6px rgba(0,0,0,.3);
-		}
-
-	.section-skills .skill-value {
-		position: absolute;
-		right: 45px;
-	}
-
-	.section-skills .progress {
-		height: 14px;
-		margin-bottom: 13px;
-		border-radius: 0px;
-		box-shadow: 0 0 5px rgba(0,0,0,.4);
-	}
-
-		.section-skills .progress-bar {
-			height: 14px;
-			box-shadow: 0 0 5px rgba(0,0,0,.4);
-		}
-
-	.section-skills .circle {
-		padding-bottom: 20px;
-		text-align: center;
-	}
-
-		.section-skills .chart-percentage {
-			position: absolute;
-			width: 100%;
-			top: 45px;
-			left: 0;
-			font-weight: bold;
-		}
-
-		.section-skills .chart canvas {
-			width: 114px;
-			height: 114px;
 		}
 
 	.section-skills .other .skill {

@@ -3,8 +3,7 @@ import { InfoResumeService } from 'src/app/services/info-resume.service';
 
 @Component({
   selector: 'app-skills',
-  templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.css']
+  templateUrl: './skills.component.html'
 })
 export class SkillsComponent implements OnInit {
 

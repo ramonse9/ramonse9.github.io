@@ -1,3 +1,6 @@
+<section *ngIf="service.cargandoInterests" class="loading" >   
+    <i class="fa fa-spinner fa-5x fa-spin" aria-hidden="true"></i>
+</section>
 <div class="animated fadeIn">        
     <section id="interests" class="section section-interests"  >
         <div class="header-section">
@@ -18,8 +21,7 @@
                         </div>
                         <h4>{{interest.name}}</h4>                        
                     </div>
-                </div>
-               
+                </div>               
             </div>
         </div>
         

@@ -1,8 +1,9 @@
 <section id="footer" class="section section-footer">
-    <div class="social-links">
+    <div *ngIf="!service.cargandoSocialMedia" class="social-links">
         <ul>
-            <li><a href="https://www.facebook.com/ramonantonio.guzmanbeltran"><i class="fa fa-facebook" ></i></a></li>
-            <li><a href="https://www.linkedin.com/in/ramon-antonio-guzman-79263716a/"><i class="fa fa-linkedin" ></i></a></li>
+            <li *ngFor="let sm of service.socialMediaJSON">
+                <a [href]="sm.link" target="_blank"><i class="fa fa-{{sm.name}}" ></i></a>
+            </li>            
         </ul>
     </div>
 </section>

@@ -3,8 +3,7 @@ import { InfoResumeService } from 'src/app/services/info-resume.service';
 
 @Component({
   selector: 'app-experience',
-  templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.css']
+  templateUrl: './experience.component.html'
 })
 export class ExperienceComponent implements OnInit {
 

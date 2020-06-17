@@ -1,3 +1,6 @@
+<section *ngIf="service.cargandoPersonal" class="loading" >   
+    <i class="fa fa-spinner fa-5x fa-spin" aria-hidden="true"></i>
+</section>
 <div class="animated fadeIn">
     <section id="contact-us" class="section section-contact-us wow fadeInUp" data-wow-offset="40" style="visibility: visible; animation-name: fadeInUp;">
         <div class="header-section">
@@ -17,7 +20,7 @@
                         <div class="clearfix"></div>
                     </form>
                     -->
-                    <form autocomplete="off" [formGroup]="forma" (ngSubmit)="enviar()">
+                    <form autocomplete="off" [formGroup]="forma" (ngSubmit)="enviarEmail()">
 
                         <div class="form-group row">                            
                             <!--<label class="col-2 col-form-label">Name</label>-->
@@ -79,3 +82,4 @@
 
     </section>
 </div>
+

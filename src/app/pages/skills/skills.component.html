@@ -1,3 +1,6 @@
+<section *ngIf="service.cargandoSkills" class="loading" >   
+    <i class="fa fa-spinner fa-5x fa-spin" aria-hidden="true"></i>
+</section>
 <div class="animated fadeIn">
     <section id="skills" class="section section-skills">
         <div class="header-section">
@@ -16,11 +19,11 @@
                                 {{skill.skill}}
                             </section>
                         </section>
-                    </section>                    
+                    </section>
                 </div>
             </div>
             <div class="col-md-5">
-                <div class="additional-skills">
+                <div class="additional-skills other-skills">
                     <div class="title-skills">
                         <h3>ADDITIONAL SKILLS</h3>
                     </div>                       
