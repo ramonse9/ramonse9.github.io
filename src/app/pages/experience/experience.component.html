@@ -1,37 +1,29 @@
 <section *ngIf="service.cargandoExperience" class="loading" >   
     <i class="fa fa-spinner fa-5x fa-spin" aria-hidden="true"></i>
 </section>
-<div class="animated fadeIn">
+<div *ngIf="!service.cargandoExperience" class="animated fadeIn">
     <section id="experience" class="section section-experience wow fadeInUp" data-wow-offset="40" style="visibility: visible; animation-name: fadeInUp;">
         <div class="header-section">
             <h2 class="h2-section">EXPERIENCE</h2>
-        </div>       
-        <section *ngIf="!service.cargandoExperience">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <span class="icon-experience">
-                        <i class="fa fa-briefcase" aria-hidden="true"></i>
-                    </span>
-                    <div class="all-experience">
-                        <!-- single experience -->
-
-                        <section *ngFor="let exp of service.experienceJSON">
-                            <div class="experience-content">
-                                <span class="period-experience">{{exp.period}}</span>
-                                <h3 class="specialty-name">{{exp.position}}</h3>
-                                <h3 class="company-name">{{exp.company}}</h3>
-                                <p class="prg-experience">{{exp.projects}}</p>
-                                <p>{{exp.activities}}</p>
-                                <p class="prg-experience">{{exp.tools}}</p>
-                            </div>
-                        </section>
-                        <!-- / single experience -->
-                        <!-- single experience -->
-                       
-                        <!-- / single experience -->
-                    </div>
+        </div>        
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <span class="icon-experience">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                </span>
+                <div class="all-experience">
+                    <section *ngFor="let exp of service.experienceJSON">
+                        <div class="experience-content">
+                            <span class="period-experience">{{exp.period}}</span>
+                            <h3 class="specialty-name">{{exp.position}}</h3>
+                            <h3 class="company-name">{{exp.company}}</h3>
+                            <p class="prg-experience">{{exp.projects}}</p>
+                            <p>{{exp.activities}}</p>
+                            <p class="prg-experience">{{exp.tools}}</p>
+                        </div>
+                    </section>                      
                 </div>
             </div>
-        </section>
+        </div>       
     </section>
-    </div>
+</div>

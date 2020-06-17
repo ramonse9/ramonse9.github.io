@@ -1,29 +1,24 @@
 <section *ngIf="service.cargandoInterests" class="loading" >   
     <i class="fa fa-spinner fa-5x fa-spin" aria-hidden="true"></i>
 </section>
-<div class="animated fadeIn">        
+<div *ngIf="!service.cargandoInterests" class="animated fadeIn">        
     <section id="interests" class="section section-interests"  >
         <div class="header-section">
             <h2 class="h2-section">INTERESTS</h2>
         </div>
         <div class="text-interests">
-            <p>
-                I love my profession, and I also find a balance between professional and recreational, some of my hobbies are:</p>
+            <p>I love my profession, and I also find a balance between professional and recreational, some of my hobbies are:</p>
         </div>            
         <!-- more icons for interests : https://www.iconfinder.com/ -->
-        
-        <div *ngIf="!service.cargandoInterests">
-            <div class="row">
-                <div class="col-sm-2 p-2" *ngFor="let interest of service.interestsJSON">
-                    <div class=" swiper-slide">                                             
-                        <div>
-                            <img [src]="interest.icon" alt="Travel">
-                        </div>
-                        <h4>{{interest.name}}</h4>                        
+        <div class="row">
+            <div class="col-sm-2 p-2" *ngFor="let interest of service.interestsJSON">
+                <div class=" swiper-slide">                                             
+                    <div>
+                        <img [src]="interest.icon" alt="Travel">
                     </div>
-                </div>               
-            </div>
+                    <h4>{{interest.name}}</h4>                        
+                </div>
+            </div>               
         </div>
-        
     </section>
-    </div>
+</div>

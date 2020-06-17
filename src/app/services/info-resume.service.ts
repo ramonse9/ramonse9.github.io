@@ -18,6 +18,9 @@ export class InfoResumeService {
   educationJSON;
   cargandoEducation = true;
 
+  conferencesJSON;
+  cargandoConferences = true;
+
   experienceJSON;
   cargandoExperience = true;
 
@@ -28,8 +31,9 @@ export class InfoResumeService {
     this.cargarPersonal();
     this.cargarSocialMedia();
     this.cargarSkills();
-    this.cargarEducation();
     this.cargarExperience();
+    this.cargarEducation();
+    this.cargarConferences();
     this.cargarInterests();
   }
 
@@ -62,6 +66,14 @@ export class InfoResumeService {
       .subscribe( resp => {
         this.educationJSON = resp;
         this.cargandoEducation = false;
+      });
+  }
+
+  private cargarConferences(){
+    this.httpClient.get('https://resumeangular-1a061.firebaseio.com/conferences.json')
+      .subscribe( resp => {
+        this.conferencesJSON = resp;
+        this.cargandoConferences = false;
       });
   }
 

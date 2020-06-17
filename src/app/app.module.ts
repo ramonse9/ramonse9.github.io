@@ -16,6 +16,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 
 import { ReactiveFormsModule } from '@angular/forms';
+import { ConferencesComponent } from './pages/conferences/conferences.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     EducationComponent,
     ExperienceComponent,
     InterestsComponent,
-    ContactComponent
+    ContactComponent,
+    ConferencesComponent
   ],
   imports: [
     BrowserModule,

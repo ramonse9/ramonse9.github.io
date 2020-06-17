@@ -1,7 +1,7 @@
 <section *ngIf="service.cargandoPersonal" class="loading" >   
     <i class="fa fa-spinner fa-5x fa-spin" aria-hidden="true"></i>
 </section>
-<div class="animated fadeIn">
+<div *ngIf="!service.cargandoPersonal" class="animated fadeIn">
     <section id="contact-us" class="section section-contact-us wow fadeInUp" data-wow-offset="40" style="visibility: visible; animation-name: fadeInUp;">
         <div class="header-section">
             <h2 class="h2-section">CONTACT ME</h2>
@@ -57,24 +57,24 @@
             <div class="col-sm-6">
                 <div class="info-content">
                     <h3>KEEP IN TOUCHE</h3>
-                    <section *ngIf="!service.cargandoPersonal">
-                        <div class="address">
-                            <span class="info-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-                            <span class="info-text">{{service.personalJSON.address}}</span>
-                        </div>
-                        <div class="email">
-                            <span class="info-icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                            <span class="info-text">{{service.personalJSON.email}}</span>
-                        </div>
-                        <div class="telephone">
-                            <span class="info-icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                            <span class="info-text">{{service.personalJSON.phone}}</span>
-                        </div>
-                        <div class="website">
-                            <span class="info-icon"><i class="fa fa-link" aria-hidden="true"></i></span>
-                            <span class="info-text">{{service.personalJSON.website}}</span>
-                        </div>
-                    </section>
+                   
+                    <div class="address">
+                        <span class="info-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span class="info-text">{{service.personalJSON.address}}</span>
+                    </div>
+                    <div class="email">
+                        <span class="info-icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <span class="info-text">{{service.personalJSON.email}}</span>
+                    </div>
+                    <div class="telephone">
+                        <span class="info-icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <span class="info-text">{{service.personalJSON.phone}}</span>
+                    </div>
+                    <div class="website">
+                        <span class="info-icon"><i class="fa fa-link" aria-hidden="true"></i></span>
+                        <span class="info-text">{{service.personalJSON.website}}</span>
+                    </div>
+                    
                 </div>
             </div>
         </div>       

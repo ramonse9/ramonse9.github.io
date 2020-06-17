@@ -34,6 +34,18 @@
                                         <span class="info">{{ service.personalJSON.age}}</span>
                                     </li>
                                     <li class="li-info">
+                                        <span class="title-info">Phone</span>
+                                        <span class="info">{{ service.personalJSON.phone}}</span>
+                                    </li>
+                                    <li class="li-info">
+                                        <span class="title-info">Nationality</span>
+                                        <span class="info">{{ service.personalJSON.nationality }}</span>
+                                    </li>                                   
+                                </ul>
+                            </div>
+                            <div class="col-sm-7">
+                                <ul class="ul-info">
+                                    <li class="li-info">
                                         <span class="title-info">Address</span>
                                         <span class="info">{{ service.personalJSON.address}}</span>
                                     </li>
@@ -41,22 +53,10 @@
                                         <span class="title-info">Email</span>
                                         <span class="info">{{service.personalJSON.email}}</span>
                                     </li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-7">
-                                <ul class="ul-info">
-                                    <li class="li-info">
-                                        <span class="title-info">Phone</span>
-                                        <span class="info">{{ service.personalJSON.phone}}</span>
-                                    </li>
                                     <li class="li-info">
                                         <span class="title-info">Website</span>
                                         <span class="info">{{ service.personalJSON.website}}</span>
-                                    </li>
-                                    <li class="li-info">
-                                        <span class="title-info">Nationality</span>
-                                        <span class="info">{{ service.personalJSON.nationality }}</span>
-                                    </li>
+                                    </li>                                   
                                 </ul>
                             </div>
                             <div *ngIf="!service.cargandoSocialMedia" class="col-sm-12">

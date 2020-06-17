@@ -6,12 +6,14 @@ import { EducationComponent } from './pages/education/education.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
 import { InterestsComponent } from './pages/interests/interests.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { ConferencesComponent } from './pages/conferences/conferences.component';
 
 const APP_ROUTES: Routes = [
     { path: 'me', component: AboutComponent },
     { path: 'skills', component: SkillsComponent },
-    { path: 'education', component: EducationComponent },
     { path: 'experience', component: ExperienceComponent },
+    { path: 'certifications', component: EducationComponent },
+    { path: 'conferences', component: ConferencesComponent },
     { path: 'interests', component: InterestsComponent },
     { path: 'contact', component: ContactComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'me'}
