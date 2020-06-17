@@ -1,0 +1,601 @@
+/*************************
+ * 
+ *
+ * 5 - CONTAINER
+ *     5-1 - ABOUT
+ *     5-2 - SKILLS
+ *     5-3 - EDUCATION
+ *     5-4 - EXPERIENCE
+ *	   5-5 - CONFERENCES
+ *     5-7 - TESTIMONIALS
+ *     5-8 - INTERESTS
+ *     5-10 - CONTACT-US
+ *
+ *
+ *************************/
+
+/****  COMMON SECTIONS STYLE ****/
+
+.background-color {
+	background: rgb(238, 238, 238); 
+}
+
+* {
+	letter-spacing: .5px;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td{
+	padding: 0;
+	margin: 0;
+}
+
+
+a, a:hover, a:focus {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style: none;
+}
+
+.loading {
+	display: flex; 
+	align-items: center; 
+	justify-content:center; 
+	min-height: 100vh; 
+}
+
+.section {
+	margin-bottom: 75px;
+}
+
+.section-about,
+.section-skills .professional-skills,
+.section-skills .additional-skills,
+.section-education .education-content,
+.section-conferences .conferences-content,
+.section-experience .icon-experience,
+.section-experience .experience-content,
+.section-testimonials .swiper-slide,
+.section-contact-us .form-content,
+.section-contact-us .info-content,
+.navbar {
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15),0 2px 10px 0 rgba(0,0,0,0.11);
+}
+
+.section .header-section {
+	text-align: center;
+}
+
+.section h2 {
+	display: inline-block;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.section .h2-section {
+	margin-bottom: 56px;
+}
+
+.section h2 {
+	font-size: 40px;
+}
+
+.menu .logo {
+	font-size: 38px;
+}
+
+.section h3 {
+	font-size: 20px;
+}
+
+.section p,
+.section h4,
+.section-about .available i,
+.section-about .available span,
+.theme-option h4,
+.section-contact-us input[type="submit"],
+.section-contact-us input[type="button"] {
+	font-size: 16px;
+}
+
+.section-about .li-social-links a {
+	font-size: 14px;
+}
+
+.section h2,
+.section-about .download-resume {
+	font-family: 'Oswald', sans-serif;
+}
+
+.section p {
+	line-height: 28px;
+}
+
+/**** CONTENT ****/
+
+.content {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 16px;
+}
+
+.container {
+	width: 100%;
+	max-width: 1000px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin: 0 auto;
+}
+
+/****  5 - CONTAINER ****/
+
+/****  5-1 - ABOUT ****/
+
+.section-about {
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+	.section-about .profile {
+		padding: 33px 33px 22px;
+	}
+
+		.section-about .photo-profile {
+			margin-bottom: 20px;
+		}
+
+			.section-about .photo-profile img {
+				display: block;
+				width: 100%;
+				box-shadow: 0 0 5px rgba(0,0,0,.4);
+			}
+
+	.section-about .download-resume {
+		margin-bottom: 25px;
+		padding: 17px 5px;
+		text-align: center;
+		box-shadow: 0 0 5px rgba(0,0,0,.4);
+		transition: all .3s;
+	}
+
+		.section-about .download-resume:hover {
+			box-shadow: 0 0 8px rgba(0,0,0,.30),0 0 12px rgba(0,0,0,.20);
+		}
+
+		.section-about .text-download {
+			padding-left: 8px;
+		}
+
+	.section-about .available {
+		text-align: center;
+	}
+
+	.section-about h2 {
+		padding-bottom: 4px;
+	}
+
+	.section-about h1 {
+		padding-bottom: 20px;
+	}
+
+	.section-about p {
+		padding-bottom: 27px;
+	}
+
+	.section-about .li-info {
+		padding-bottom: 10px;
+	}
+
+		.section-about .title-info {
+			display: inline-block;
+			width: 100px;
+		}
+
+	.section-about .title-links {
+		display: inline-block;
+	}
+
+	.section-about .ul-social-links {
+		margin-top: 10px;
+	}
+
+		.section-about .li-social-links {
+			display: inline-block;
+			margin: 0 5px 12px;
+		}
+
+			.section-about .li-social-links a {
+				display: inline-block;
+				width: 34px;
+				height: 34px;
+				line-height: 34px;
+				text-align: center;
+				transition: all .2s;
+			}
+
+/****  5-2 - SKILLS ****/
+
+
+
+.section-skills .h2-section {
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.section-skills .professional-skills,
+.section-skills .additional-skills {
+	
+	padding: 0 30px 30px;
+	margin-bottom: 50px;
+
+		
+}
+
+	.section-skills .title-skills {
+		text-align: center;
+	}
+
+		.section-skills h3 {
+			display: inline-block;
+			position: relative;
+			top: -32px;
+			padding: 18px 28px;
+			box-shadow: 0 0 6px rgba(0,0,0,.3);
+		}
+
+	.section-skills .other .skill {
+		padding-bottom: 6px;
+	}
+
+	.section-skills .other-skills i {
+		margin-right: 5px;
+	}
+
+/****  5-3 - EDUCATION ****/
+
+.section-education {
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.section-education .education-content {
+	margin-bottom: 30px;
+	padding: 30px;
+}
+
+	.section-education h3 {
+		margin-bottom: 18px;
+		display: inline-block;
+		padding: 15px 45px;
+		min-height: 50px;
+		position: relative;
+		left: -45px;
+		box-shadow: 3px 3px 8px rgba(0,0,0,.4);
+	}
+
+		.section-education h3::before {
+			content: '';
+			position: absolute;
+			top: 52px;
+			left: 0px;
+			border-width: 5px 7px;
+			border-style: solid;
+			border-color: transparent;
+			transition: all .6s;
+		}
+
+	.section-education .ul-education {
+		margin-bottom: 12px;
+	}
+
+/****  5-4 - EXPERIENCE ****/
+
+.section-experience {
+	margin-top:20px;
+	margin-bottom: 50px;
+}
+
+.section-experience .icon-experience {
+	display: inline-block;
+	margin-left: 161px;
+	padding: 8px 13px;
+}
+
+.section-experience .all-experience {
+	margin-left: 180px;
+	padding-top: 45px;
+	padding-left: 23px;
+}
+
+	.section-experience .experience-content {
+		padding: 30px;
+		margin-bottom: 45px;
+	}
+
+		.section-experience .experience-content::before {
+			content: '';
+			position: absolute;
+			left: 191px;
+			margin-top: -13px;
+			width: 14px;
+			height: 14px;
+			border-radius: 50%;
+			box-shadow: 0 0 5px rgba(0,0,0,.3);
+		}
+
+		.section-experience .period-experience {
+			display: inline-block;
+			position: absolute;
+			left: -3px;
+			margin-top: -30px;
+			width: 174px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			text-align: center;
+			box-shadow: 0 0 10px rgba(0,0,0,.1), 0 0 15px rgba(0,0,0,.08);
+		}
+
+		.section-experience .specialty-name {
+			margin-bottom: 10px;
+		}
+
+		.section-experience .company-name {
+			margin-bottom: 8px;
+		}
+
+		
+/****  5-5 - CONFERENCES ****/
+
+.section-conferences {
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.section-conferences .conferences-content {
+	margin-bottom: 30px;
+	padding: 30px;
+}
+
+	.section-conferences h3 {
+		margin-bottom: 18px;
+		display: inline-block;
+		padding: 15px 45px;
+		min-height: 50px;
+		position: relative;
+		left: -45px;
+		box-shadow: 3px 3px 8px rgba(0,0,0,.4);
+	}
+
+		.section-conferences h3::before {
+			content: '';
+			position: absolute;
+			top: 52px;
+			left: 0px;
+			border-width: 5px 7px;
+			border-style: solid;
+			border-color: transparent;
+			transition: all .6s;
+		}
+
+	.section-conferences .ul-conferences {
+		margin-bottom: 12px;
+	}
+
+		.section-conferences .li-specialty {
+			margin-bottom: 5px;
+		}
+
+		.section-conferences .conferences-icon {
+			display: inline-block;
+			width: 23px;
+		}
+
+/****  5-7 - TESTIMONIALS ****/
+
+.section-testimonials {
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.section-testimonials .swiper-container {
+	cursor: move;
+}
+
+	.section-testimonials .personal-info {
+		padding-top: 20px;
+		padding-bottom: 12px;
+		text-align: center;
+	}
+
+		.section-testimonials img {
+			margin-bottom: 10px;
+			width: 103px;
+			border-radius: 50%;
+		}
+
+	.section-testimonials .personal-text {
+		padding: 20px;
+	}
+
+			.section-testimonials .fa-quote-left {
+				margin-right: 5px;
+			}
+
+			.section-testimonials .fa-quote-right {
+				margin-left: 5px;
+			}
+
+	.section-testimonials .swiper-pagination {
+		position: relative;
+		margin-top: 40px;
+	}
+
+		.section-testimonials .swiper-pagination span {
+			width: 12px;
+			height: 12px;
+			transition: all .2s;
+		}
+
+		.section-testimonials span.swiper-pagination-bullet-active {
+			transform: rotate(45deg);
+			border-radius: 0;
+		}
+
+/****  5-8 - INTERESTS ****/
+
+.section-interests .h2-section {
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.section-interests .swiper-container {
+	cursor: move;
+}
+	.section-interests p {
+		margin-bottom: 34px;
+		margin-right: 10%;
+		margin-left: 10%;
+		text-align: center;
+	}
+
+	.section-interests .swiper-slide {
+		padding-top: 30px;
+		height: 120px;
+		text-align: center;
+		box-shadow: 0 0 10px rgba(0,0,0,.2), 0 0 15px rgba(0,0,0,.15);
+	}
+
+		.section-interests .swiper-slide div {
+			height: 45px;
+		}
+
+			.section-interests img {
+				max-width: 45px;
+			}
+
+		.section-interests h4 {
+			font-weight: bold;
+		}
+
+/****  5-10 - CONTACT-US ****/
+
+.section-contact-us {
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+	.section-contact-us .form-content {
+		margin-bottom: 30px;
+		padding: 35px 40px 40px;
+	}
+
+		.section-contact-us h3 {
+			margin-bottom: 35px;
+		}
+
+		.section-contact-us input,
+		.section-contact-us textarea {
+			display: block;
+			width: 100%;
+			border: none;
+			background-color: transparent;
+			transition: all .3s;
+		}
+
+		.section-contact-us input {
+			margin-bottom: 22px;
+			height: 40px;
+		}
+
+		.section-contact-us textarea {
+			margin-bottom: 30px;
+			max-width: 100%;
+			min-width: 100%;
+			height: 100px;
+			max-height: 300px;
+		}
+
+		.section-contact-us input[type="submit"],
+		.section-contact-us input[type="button"] {
+			margin-bottom: 5px;
+			width: 123px;
+			height: 45px;
+			border-bottom: none;
+			font-weight: bold;
+			transition: all .3s;
+		}
+
+	.section-contact-us .info-content {
+		margin-bottom: 30px;
+		padding: 35px 30px 40px;
+		min-height: 435px;
+	}
+
+		.section-contact-us .info-content div {
+			margin-bottom: 25px;
+		}
+
+			.section-contact-us .info-icon {
+				display: inline-block;
+				margin-right: 13px;
+				padding-top: 10px;
+				padding-right: 2px;
+				width: 46px;
+				height: 46px;
+				text-align: center;
+				border-radius: 3px;	
+			}
+
+			.section-contact-us .info-text {
+				display: inline-block;
+				padding: 10px 15px;
+				vertical-align: top;
+				width: calc(100% - 66px);
+				border-radius: 3px;
+				min-height: 42px;
+			}
+
+				.section-contact-us .info-text::before {
+					content: '';
+					position: absolute;
+					margin-top: 4px;
+					margin-left: -31px;
+					width: 16px;
+					height: 16px;
+					border-width: 8px;
+					border-style: solid;
+					border-color: transparent;
+				}
+
+	.section-contact-us .social-links {
+		text-align: center;
+		box-shadow: 0 0 10px rgba(0,0,0,.2), 0 0 15px rgba(0,0,0,.15);
+	}
+
+		.section-contact-us .social-links li {
+			display: inline-block;
+			margin: 30px;
+			width: 30px;
+			opacity: .85;
+			transition: all .2s;
+		}
+
+			.section-contact-us .social-links li:hover {
+				opacity: 1;
+			}
+
+	.section-footer .social-links {
+		text-align: center;
+		box-shadow: 0 0 10px rgba(0,0,0,.2), 0 0 15px rgba(0,0,0,.15);
+	}
+		.section-footer .social-links li {
+			display: inline-block;
+			margin: 30px;
+			width: 30px;
+			opacity: .85;
+			transition: all .2s;
+		}
+			.section-footer .social-links li:hover {
+				opacity: 1;
+			}
