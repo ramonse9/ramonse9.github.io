@@ -298,45 +298,45 @@ ul {
 
 .section-experience .icon-experience {
 	display: inline-block;
-	margin-left: 161px;
+	margin-left: 0px;
 	padding: 8px 13px;
 }
 
 .section-experience .all-experience {
-	margin-left: 180px;
+	margin-left: 20px;
 	padding-top: 45px;
 	padding-left: 23px;
 }
-
 	.section-experience .experience-content {
 		padding: 30px;
 		margin-bottom: 45px;
 	}
 
-		.section-experience .experience-content::before {
-			content: '';
-			position: absolute;
-			left: 191px;
-			margin-top: -13px;
-			width: 14px;
-			height: 14px;
-			border-radius: 50%;
-			box-shadow: 0 0 5px rgba(0,0,0,.3);
-		}
+	.section-experience .experience-content::before {
+		content: '';
+		position: absolute;
+		left: 31px;
+		margin-top: 4px;
+		width: 14px;
+		height: 14px;
+		border-radius: 50%;
+		box-shadow: 0 0 5px rgba(0,0,0,.3);
+	}
 
 		.section-experience .period-experience {
-			display: inline-block;
-			position: absolute;
-			left: -3px;
-			margin-top: -30px;
-			width: 174px;
+			display: inline-block;		
+			left: -3px;			
+			margin-top: -30px;		
+			padding-left: 10px;
+			padding-right: 10px;
 			padding-top: 10px;
 			padding-bottom: 10px;
 			text-align: center;
-			box-shadow: 0 0 10px rgba(0,0,0,.1), 0 0 15px rgba(0,0,0,.08);
+			box-shadow: 0 0 10px rgba(0,0,0,.1), 0 0 15px rgba(0,0,0,.3);
 		}
 
 		.section-experience .specialty-name {
+			margin-top: 10px;
 			margin-bottom: 10px;
 		}
 
