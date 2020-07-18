@@ -1,9 +1,0 @@
-<section id="footer" class="section section-footer">
-    <div *ngIf="!service.cargandoSocialMedia" class="social-links">
-        <ul>
-            <li *ngFor="let sm of service.socialMediaJSON">
-                <a [href]="sm.link" target="_blank"><i class="fa fa-{{sm.name}}" ></i></a>
-            </li>            
-        </ul>
-    </div>
-</section>
